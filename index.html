@@ -17,7 +17,7 @@ background:#f8fafc;
 color:#0f172a;
 }
 
-/* ===== TOP BAR ===== */
+/* TOPBAR */
 .topbar{
 position:fixed;
 top:0;
@@ -37,7 +37,7 @@ color:#22c55e;
 text-decoration:none;
 }
 
-/* ===== HERO ===== */
+/* HERO */
 .hero{
 padding-top:90px;
 min-height:90vh;
@@ -51,7 +51,13 @@ url('https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3');
 background-size:cover;
 }
 
-.hero h1{font-size:42px;}
+.hero img{
+width:120px;
+margin-bottom:15px;
+background:#fff;
+padding:5px;
+border-radius:10px;
+}
 
 .btn{
 padding:14px 28px;
@@ -65,7 +71,7 @@ display:inline-block;
 .btn-call{background:#22c55e;color:#fff;}
 .btn-wa{border:1px solid #fff;color:#fff;}
 
-/* ===== SECTION ===== */
+/* SECTION */
 .section{
 padding:70px 20px;
 max-width:1100px;
@@ -74,7 +80,7 @@ margin:auto;
 
 h2{text-align:center;margin-bottom:40px;}
 
-/* ===== GRID ===== */
+/* GRID */
 .grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -88,32 +94,31 @@ border-radius:16px;
 box-shadow:0 10px 30px rgba(0,0,0,0.05);
 }
 
-/* ===== GALLERY ===== */
+/* GALLERY */
 .gallery img{
 width:100%;
-border-radius:12px;
-height:200px;
+height:220px;
 object-fit:cover;
+border-radius:12px;
 }
 
-/* ===== BULK ===== */
+/* BULK */
 .bulk{
 background:#0f172a;
 color:#fff;
 text-align:center;
-padding:60px 20px;
+padding:60px;
 border-radius:20px;
 }
 
-/* ===== TESTIMONIAL ===== */
+/* TESTIMONIAL */
 .testimonial{
 background:#fff;
 padding:20px;
 border-radius:12px;
-font-size:14px;
 }
 
-/* ===== CONTACT ===== */
+/* CONTACT */
 .contact input, .contact textarea{
 width:100%;
 padding:12px;
@@ -122,7 +127,7 @@ border-radius:8px;
 border:1px solid #ccc;
 }
 
-/* ===== FOOTER ===== */
+/* FOOTER */
 .footer{
 background:#111827;
 color:#fff;
@@ -130,7 +135,6 @@ text-align:center;
 padding:25px;
 }
 
-/* FLOAT */
 .whatsapp{
 position:fixed;
 bottom:20px;
@@ -158,14 +162,16 @@ color:#fff;
 <!-- HERO -->
 <section class="hero">
 <div>
-<img src="https://www.geolift.co.in/images/paharilogo.png" width="120"><br>
 
-<h1>Puja Essentials Manufacturer</h1>
+<img src="https://www.geolift.co.in/images/paharilogo.png">
 
-<p>High-quality puja samagri supplier across India</p>
+<h1>Puja Essentials Manufacturer in India</h1>
+
+<p>High-quality puja samagri supplier for retailers & wholesalers</p>
 
 <a href="tel:6293121131" class="btn btn-call">Call Now</a>
 <a href="https://wa.me/916293121131" class="btn btn-wa">WhatsApp</a>
+
 </div>
 </section>
 
@@ -174,22 +180,24 @@ color:#fff;
 <h2>Our Products</h2>
 <div class="grid">
 <div class="card">Kumkum Paste</div>
-<div class="card">Tilak</div>
-<div class="card">Janeu</div>
+<div class="card">Kumkum Tilak</div>
+<div class="card">Janeu (Paita)</div>
 <div class="card">Puja Oil</div>
 <div class="card">Mustard Oil</div>
 </div>
 </section>
 
-<!-- GALLERY -->
+<!-- GALLERY (WORKING) -->
 <section class="section gallery">
 <h2>Product Gallery</h2>
 <div class="grid">
-<img src="your1.jpg">
-<img src="your2.jpg">
-<img src="your3.jpg">
-<img src="your4.jpg">
-<img src="your5.jpg">
+
+<img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092">
+<img src="https://images.unsplash.com/photo-1590080877777-95f5c1c2a6b4">
+<img src="https://images.unsplash.com/photo-1604908811975-3f1a1e1b2c6d">
+<img src="https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3">
+<img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092">
+
 </div>
 </section>
 
@@ -197,8 +205,8 @@ color:#fff;
 <section class="section">
 <div class="bulk">
 <h2>Looking for Bulk Supply?</h2>
-<p>Get manufacturer direct pricing & fast delivery</p>
-<a href="tel:6293121131" class="btn btn-call">Call for Bulk Order</a>
+<p>Manufacturer direct pricing & fast delivery</p>
+<a href="tel:6293121131" class="btn btn-call">Call Now</a>
 </div>
 </section>
 
@@ -206,27 +214,27 @@ color:#fff;
 <section class="section">
 <h2>About Us</h2>
 <p>
-Pahari Innovations is a trusted manufacturer of puja essentials...
+Pahari Innovations is a trusted manufacturer and supplier of puja essentials based in Kolkata. We specialize in kumkum, tilak, janeu, and puja oils, delivering high-quality products to retailers and wholesalers across India. Our focus is purity, consistency, and long-term business relationships.
 </p>
 </section>
 
 <!-- TESTIMONIAL -->
 <section class="section">
-<h2>What Our Clients Say</h2>
+<h2>What Clients Say</h2>
 <div class="grid">
-<div class="testimonial">“Best quality products.”</div>
-<div class="testimonial">“Reliable supplier.”</div>
-<div class="testimonial">“Fast delivery.”</div>
+<div class="testimonial">Best quality products.</div>
+<div class="testimonial">Very reliable supplier.</div>
+<div class="testimonial">Fast delivery always.</div>
 </div>
 </section>
 
 <!-- CONTACT -->
 <section class="section contact">
 <h2>Contact Us</h2>
-<input type="text" placeholder="Your Name">
-<input type="text" placeholder="Phone Number">
-<textarea placeholder="Your Requirement"></textarea>
-<a href="#" class="btn btn-call">Submit</a>
+<input type="text" placeholder="Name">
+<input type="text" placeholder="Phone">
+<textarea placeholder="Requirement"></textarea>
+<a href="tel:6293121131" class="btn btn-call">Call Now</a>
 </section>
 
 <!-- FOOTER -->
