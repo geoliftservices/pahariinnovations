@@ -18,7 +18,7 @@ color:#0f172a;
 scroll-behavior:smooth;
 }
 
-/* ===== TOP BAR (FIXED) ===== */
+/* ===== TOP BAR ===== */
 .topbar{
 position:fixed;
 top:0;
@@ -39,7 +39,6 @@ box-sizing:border-box;
 display:flex;
 align-items:center;
 gap:12px;
-padding-right:10px;
 }
 
 .topbar a{
@@ -72,6 +71,8 @@ max-width:750px;
 width:120px;
 margin-bottom:20px;
 border-radius:10px;
+background:#fff;
+padding:5px;
 }
 
 .hero h1{
@@ -106,6 +107,15 @@ color:#fff;
 .btn-wa{
 border:1px solid #fff;
 color:#fff;
+}
+
+/* ===== PRODUCTS SECTION WITH BG IMAGE ===== */
+.products-section{
+background:
+linear-gradient(rgba(248,250,252,0.95), rgba(248,250,252,0.95)),
+url('YOUR-MIXED-PRODUCT-IMAGE.jpg'); /* 👈 put your generated image here */
+background-size:cover;
+background-position:center;
 }
 
 /* SECTION */
@@ -171,7 +181,7 @@ color:#22c55e;
 text-decoration:none;
 }
 
-/* WHATSAPP */
+/* FLOAT */
 .whatsapp{
 position:fixed;
 bottom:20px;
@@ -184,7 +194,6 @@ text-decoration:none;
 z-index:999;
 }
 
-/* SCROLL TOP */
 .scroll-top{
 position:fixed;
 bottom:80px;
@@ -219,7 +228,8 @@ display:none;
 <section class="hero">
 <div class="hero-content">
 
-<img src="https://www.geolift.co.in/images/paharilogo.png" class="logo">
+<!-- REMOVE IF NO LOGO -->
+<!-- <img src="https://www.geolift.co.in/images/paharilogo.png" class="logo"> -->
 
 <h1>Puja Essentials Manufacturer in India</h1>
 
@@ -228,7 +238,7 @@ Trusted manufacturer and supplier of premium puja samagri across India. We provi
 </p>
 
 <p>
-From kumkum and janeu to puja oils and traditional essentials, our products are crafted to maintain purity, authenticity, and cultural value in every ritual. Partner with us for bulk orders and long-term supply solutions.
+From kumkum and janeu to puja oils and traditional essentials, our products are crafted to maintain purity, authenticity, and cultural value in every ritual.
 </p>
 
 <div class="buttons">
@@ -240,34 +250,34 @@ From kumkum and janeu to puja oils and traditional essentials, our products are 
 </section>
 
 <!-- PRODUCTS -->
-<section class="section">
+<section class="section products-section">
 <h2>Our Products</h2>
 
 <div class="grid">
 
 <div class="card">
 <h3>Puja Paste (Kumkum)</h3>
-<p>High-quality kumkum with vibrant color and smooth texture for daily rituals.</p>
+<p>High-quality kumkum with vibrant color and smooth texture for rituals.</p>
 </div>
 
 <div class="card">
 <h3>Kumkum Tilak</h3>
-<p>Premium tilak designed for temples and spiritual use with purity assurance.</p>
+<p>Premium tilak ensuring purity for spiritual use.</p>
 </div>
 
 <div class="card">
 <h3>Janeu (Paita)</h3>
-<p>Traditional sacred thread made with authenticity and cultural standards.</p>
+<p>Traditional sacred thread made with authenticity.</p>
 </div>
 
 <div class="card">
-<h3>Aguru Puja Oil</h3>
-<p>Fragrant oil that enhances spiritual practices with calming aroma.</p>
+<h3>Puja Oil</h3>
+<p>Fragrant oil enhancing rituals and spiritual ambiance.</p>
 </div>
 
 <div class="card">
-<h3>Puja Mustard Oil</h3>
-<p>Pure oil ideal for diya lighting ensuring clean and traditional burning.</p>
+<h3>Mustard Oil</h3>
+<p>Pure oil ideal for diya lighting and rituals.</p>
 </div>
 
 </div>
@@ -278,35 +288,18 @@ From kumkum and janeu to puja oils and traditional essentials, our products are 
 <h2>About Pahari Innovations</h2>
 
 <div class="about">
-<p>... (same 300 words content already included earlier) ...</p>
-</div>
-</section>
 
-<!-- WHY -->
-<section class="section">
-<h2>Why Choose Us</h2>
+<p>
+Pahari Innovations is a trusted manufacturer and supplier of high-quality puja essentials, dedicated to preserving the authenticity and purity of traditional Indian rituals. Based in Kolkata, we specialize in producing a wide range of religious products including kumkum, tilak, janeu (paita), and puja oils, crafted with care to meet both spiritual and quality standards.
+</p>
 
-<div class="grid">
+<p>
+Our focus is on delivering consistent, reliable products that cater to retailers, wholesalers, temples, and distributors across India. We understand the importance of purity in religious practices, which is why every product is prepared using carefully selected raw materials and controlled processes to ensure quality, fragrance, and performance.
+</p>
 
-<div class="card">
-<h3>Manufacturer Direct Pricing</h3>
-<p>Better margins with no middlemen.</p>
-</div>
-
-<div class="card">
-<h3>Bulk Supply Capability</h3>
-<p>Reliable large order handling.</p>
-</div>
-
-<div class="card">
-<h3>Consistent Quality</h3>
-<p>Every product meets quality standards.</p>
-</div>
-
-<div class="card">
-<h3>Transparent Dealing</h3>
-<p>Simple and clear communication.</p>
-</div>
+<p>
+At Pahari Innovations, we believe in building long-term relationships with our clients through transparency, timely delivery, and dependable service. Whether you are a small retailer or a bulk distributor, we offer flexible supply solutions tailored to your needs.
+</p>
 
 </div>
 </section>
@@ -322,25 +315,17 @@ From kumkum and janeu to puja oils and traditional essentials, our products are 
 <!-- FOOTER -->
 <div class="footer">
 <p>📞 6293121131 | 📧 pahariinnovations@gmail.com</p>
-<p>
-Developed by 
-<a href="https://geolift.co.in" target="_blank">Geolift Solutions</a>
-</p>
+<p>Developed by <a href="https://geolift.co.in" target="_blank">Geolift Solutions</a></p>
 </div>
 
-<!-- FLOAT BUTTONS -->
+<!-- FLOAT -->
 <a href="https://wa.me/916293121131" class="whatsapp">💬</a>
-
 <div class="scroll-top" onclick="scrollTopFunc()">↑</div>
 
 <script>
 window.onscroll=function(){
 let btn=document.querySelector(".scroll-top");
-if(document.documentElement.scrollTop>200){
-btn.style.display="block";
-}else{
-btn.style.display="none";
-}
+btn.style.display=document.documentElement.scrollTop>200?"block":"none";
 }
 function scrollTopFunc(){
 window.scrollTo({top:0,behavior:'smooth'});
