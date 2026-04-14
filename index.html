@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Pahari Innovations | Puja Essentials Manufacturer in India</title>
+<title>Pahari Innovations | Puja Essentials Manufacturer</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
 
@@ -17,44 +17,110 @@ background:#f8fafc;
 color:#0f172a;
 }
 
-/* TOP BAR */
+/* ===== PREMIUM TOP BAR ===== */
+
 .topbar{
-background:#0f172a;
-color:#fff;
-padding:8px 20px;
+position:fixed;
+top:0;
+width:100%;
 display:flex;
 justify-content:space-between;
-font-size:14px;
+padding:10px 20px;
+font-size:13px;
+background:rgba(15,23,42,0.7);
+backdrop-filter:blur(10px);
+color:#e2e8f0;
+z-index:9999;
 }
 
-.topbar a{color:#22c55e;text-decoration:none;font-weight:600;}
+.topbar a{
+color:#e2e8f0;
+text-decoration:none;
+font-weight:500;
+}
 
-/* HERO */
+/* ===== HERO ===== */
+
 .hero{
-background:linear-gradient(135deg,#0f172a,#1e293b);
-color:#fff;
-padding:80px 20px;
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
 text-align:center;
+color:#fff;
+position:relative;
+padding:0 20px;
 }
 
-.hero h1{font-size:42px;}
-.hero p{max-width:600px;margin:auto;opacity:.9;}
+/* background */
+.hero::before{
+content:'';
+position:absolute;
+inset:0;
+background:linear-gradient(135deg,#0f172a,#1e293b);
+z-index:-2;
+}
+
+/* glow */
+.hero::after{
+content:'';
+position:absolute;
+width:500px;
+height:500px;
+background:radial-gradient(circle,rgba(99,102,241,0.3),transparent);
+top:-100px;
+left:-100px;
+filter:blur(80px);
+z-index:-1;
+}
+
+.hero h1{
+font-size:48px;
+font-weight:800;
+line-height:1.2;
+}
+
+.hero p{
+max-width:600px;
+margin:20px auto;
+opacity:.85;
+}
+
+/* BUTTONS */
+.buttons{
+display:flex;
+justify-content:center;
+gap:12px;
+flex-wrap:wrap;
+}
 
 .btn{
-display:inline-block;
-padding:12px 26px;
-margin:10px;
-border-radius:30px;
+padding:14px 28px;
+border-radius:40px;
 text-decoration:none;
 font-weight:600;
+transition:.3s;
 }
 
-.btn-call{background:#22c55e;color:#fff;}
-.btn-wa{border:1px solid #fff;color:#fff;}
+.btn-primary{
+background:#22c55e;
+color:#fff;
+}
 
-.trust span{
-margin:5px;
+.btn-secondary{
+border:1px solid rgba(255,255,255,0.5);
+color:#fff;
+}
+
+.btn:hover{
+transform:translateY(-2px);
+}
+
+/* TRUST */
+.trust{
+margin-top:15px;
 font-size:13px;
+opacity:.9;
 }
 
 /* SECTION */
@@ -76,7 +142,6 @@ grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 gap:20px;
 }
 
-/* CARD */
 .card{
 background:#fff;
 padding:20px;
@@ -90,32 +155,6 @@ transform:translateY(-6px);
 box-shadow:0 20px 50px rgba(0,0,0,0.08);
 }
 
-/* PRODUCT IMAGE */
-.product img{
-width:100%;
-border-radius:10px;
-}
-
-/* ABOUT */
-.about{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:40px;
-align-items:center;
-}
-
-@media(max-width:768px){
-.about{grid-template-columns:1fr;}
-}
-
-/* PROCESS */
-.process{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:20px;
-text-align:center;
-}
-
 /* CTA */
 .cta{
 background:#0f172a;
@@ -124,12 +163,13 @@ text-align:center;
 padding:60px 20px;
 }
 
-/* FOOTER */
-.footer{
-text-align:center;
-padding:20px;
-font-size:14px;
-color:#64748b;
+/* MOBILE */
+@media(max-width:768px){
+
+.hero h1{
+font-size:32px;
+}
+
 }
 
 </style>
@@ -146,19 +186,23 @@ color:#64748b;
 <!-- HERO -->
 <section class="hero">
 
+<div>
+
 <h1>Puja Essentials Manufacturer in India</h1>
 
 <p>
-Pahari Innovations provides high-quality puja samagri including kumkum, puja oil, janeu, and religious essentials for retail and wholesale supply across India.
+Pahari Innovations supplies high-quality puja samagri including kumkum, puja oil, janeu and religious essentials across India.
 </p>
 
-<a href="tel:6293121131" class="btn btn-call">Call Now</a>
-<a href="https://wa.me/916293121131" class="btn btn-wa">WhatsApp</a>
+<div class="buttons">
+<a href="tel:6293121131" class="btn btn-primary">Call Now</a>
+<a href="https://wa.me/916293121131" class="btn btn-secondary">WhatsApp</a>
+</div>
 
 <div class="trust">
-<span>✔ Wholesale Available</span>
-<span>✔ Bulk Orders</span>
-<span>✔ Trusted Manufacturer</span>
+✔ Wholesale Available &nbsp;&nbsp; ✔ Bulk Orders &nbsp;&nbsp; ✔ Trusted Manufacturer
+</div>
+
 </div>
 
 </section>
@@ -170,53 +214,11 @@ Pahari Innovations provides high-quality puja samagri including kumkum, puja oil
 
 <div class="grid">
 
-<div class="card product">
-<img src="/mnt/data/e29b8eca-84b2-4d2f-94f9-b92e50e59c9f.png">
-<p>Puja Paste (Kumkum)</p>
-</div>
-
-<div class="card product">
-<img src="/mnt/data/d235e24d-43c5-482e-8b42-152ab24395f2.png">
-<p>Kumkum Tilak</p>
-</div>
-
-<div class="card product">
-<p>Janeu (Paita)</p>
-</div>
-
-<div class="card product">
-<p>Aguru Puja Oil</p>
-</div>
-
-<div class="card product">
-<p>Puja Mustard Oil</p>
-</div>
-
-</div>
-
-</section>
-
-<!-- ABOUT -->
-<section class="section">
-
-<div class="about">
-
-<div>
-<h2>About Pahari Innovations</h2>
-
-<p>
-Pahari Innovations is a Kolkata-based manufacturer of puja essentials. We specialize in producing high-quality religious products used in daily rituals and ceremonies.
-</p>
-
-<p>
-We supply to retailers, wholesalers, and distributors across India with consistent quality and reliable delivery.
-</p>
-
-</div>
-
-<div>
-<img src="/mnt/data/e29b8eca-84b2-4d2f-94f9-b92e50e59c9f.png">
-</div>
+<div class="card">Puja Paste (Kumkum)</div>
+<div class="card">Kumkum Tilak</div>
+<div class="card">Janeu (Paita)</div>
+<div class="card">Aguru Puja Oil</div>
+<div class="card">Puja Mustard Oil</div>
 
 </div>
 
@@ -231,24 +233,8 @@ We supply to retailers, wholesalers, and distributors across India with consiste
 
 <div class="card">Manufacturer Direct Pricing</div>
 <div class="card">Bulk Supply Across India</div>
-<div class="card">Reliable Product Quality</div>
-<div class="card">Simple & Transparent Dealing</div>
-
-</div>
-
-</section>
-
-<!-- PROCESS -->
-<section class="section">
-
-<h2>How We Work</h2>
-
-<div class="process">
-
-<div class="card">Order Request</div>
-<div class="card">Product Preparation</div>
-<div class="card">Quality Check</div>
-<div class="card">Delivery Across India</div>
+<div class="card">Reliable Quality</div>
+<div class="card">Transparent Dealing</div>
 
 </div>
 
@@ -257,40 +243,14 @@ We supply to retailers, wholesalers, and distributors across India with consiste
 <!-- CTA -->
 <section class="cta">
 
-<h2>Looking for Puja Products Supplier?</h2>
+<h2>Need Puja Products in Bulk?</h2>
 
-<p>Call or WhatsApp now for bulk orders and wholesale pricing</p>
+<p>Call or WhatsApp for wholesale supply</p>
 
-<a href="tel:6293121131" class="btn btn-call">Call Now</a>
-<a href="https://wa.me/916293121131" class="btn btn-wa">WhatsApp</a>
-
-</section>
-
-<!-- MAP -->
-<section class="section">
-
-<h2>Our Location</h2>
-
-<iframe src="https://maps.google.com/maps?q=Kolkata&t=&z=13&ie=UTF8&iwloc=&output=embed"
-width="100%" height="250" style="border:0;"></iframe>
+<a href="tel:6293121131" class="btn btn-primary">Call Now</a>
+<a href="https://wa.me/916293121131" class="btn btn-secondary">WhatsApp</a>
 
 </section>
-
-<!-- CONTACT -->
-<section class="section">
-
-<h2>Contact</h2>
-
-<p><strong>Phone:</strong> 6293121131</p>
-<p><strong>Email:</strong> pahariinnovations@gmail.com</p>
-<p><strong>Location:</strong> Kolkata, India</p>
-
-</section>
-
-<!-- FOOTER -->
-<div class="footer">
-© 2026 Pahari Innovations | Puja Essentials Manufacturer
-</div>
 
 </body>
 </html>
