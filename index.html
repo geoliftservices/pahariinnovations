@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Pahari Innovations | Puja Essentials Manufacturer in India</title>
+<title>Pahari Innovations | Puja Essentials Manufacturer</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
 
@@ -15,7 +15,6 @@ margin:0;
 font-family:'Poppins',sans-serif;
 background:#f8fafc;
 color:#0f172a;
-scroll-behavior:smooth;
 }
 
 /* ===== TOP BAR ===== */
@@ -26,25 +25,16 @@ left:0;
 right:0;
 display:flex;
 justify-content:space-between;
-align-items:center;
 padding:10px 30px;
 background:#0f172a;
 color:#fff;
 z-index:999;
 font-size:13px;
-box-sizing:border-box;
-}
-
-.topbar div{
-display:flex;
-align-items:center;
-gap:12px;
 }
 
 .topbar a{
 color:#22c55e;
 text-decoration:none;
-white-space:nowrap;
 }
 
 /* ===== HERO ===== */
@@ -56,81 +46,35 @@ align-items:center;
 justify-content:center;
 text-align:center;
 color:#fff;
-background:
-linear-gradient(rgba(15,23,42,0.85), rgba(15,23,42,0.85)),
+background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
 url('https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3');
 background-size:cover;
-background-position:center;
 }
 
-.hero-content{
-max-width:750px;
-}
-
-.logo{
-width:120px;
-margin-bottom:20px;
-border-radius:10px;
-background:#fff;
-padding:5px;
-}
-
-.hero h1{
-font-size:44px;
-font-weight:800;
-}
-
-.hero p{
-margin:20px 0;
-}
-
-/* BUTTONS */
-.buttons{
-display:flex;
-justify-content:center;
-gap:12px;
-flex-wrap:wrap;
-}
+.hero h1{font-size:42px;}
 
 .btn{
-padding:14px 26px;
+padding:14px 28px;
 border-radius:40px;
 text-decoration:none;
 font-weight:600;
+margin:5px;
+display:inline-block;
 }
 
-.btn-call{
-background:#22c55e;
-color:#fff;
-}
+.btn-call{background:#22c55e;color:#fff;}
+.btn-wa{border:1px solid #fff;color:#fff;}
 
-.btn-wa{
-border:1px solid #fff;
-color:#fff;
-}
-
-/* ===== PRODUCTS SECTION ===== */
-.products-section{
-background:
-linear-gradient(rgba(248,250,252,0.92), rgba(248,250,252,0.92)),
-url('products-bg.jpg'); /* 👈 your generated image */
-background-size:cover;
-background-position:center;
-}
-
-/* SECTION */
+/* ===== SECTION ===== */
 .section{
 padding:70px 20px;
 max-width:1100px;
 margin:auto;
 }
 
-h2{
-text-align:center;
-margin-bottom:40px;
-}
+h2{text-align:center;margin-bottom:40px;}
 
-/* GRID */
+/* ===== GRID ===== */
 .grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -139,46 +83,51 @@ gap:20px;
 
 .card{
 background:#fff;
-padding:22px;
-border-radius:14px;
-border:1px solid #e2e8f0;
+padding:20px;
+border-radius:16px;
+box-shadow:0 10px 30px rgba(0,0,0,0.05);
 }
 
-.card h3{
-margin-bottom:10px;
+/* ===== GALLERY ===== */
+.gallery img{
+width:100%;
+border-radius:12px;
+height:200px;
+object-fit:cover;
 }
 
-.card p{
-font-size:14px;
-color:#475569;
-}
-
-/* ABOUT */
-.about{
-max-width:850px;
-margin:auto;
-line-height:1.8;
-}
-
-/* CTA */
-.cta{
+/* ===== BULK ===== */
+.bulk{
 background:#0f172a;
 color:#fff;
 text-align:center;
 padding:60px 20px;
+border-radius:20px;
 }
 
-/* FOOTER */
+/* ===== TESTIMONIAL ===== */
+.testimonial{
+background:#fff;
+padding:20px;
+border-radius:12px;
+font-size:14px;
+}
+
+/* ===== CONTACT ===== */
+.contact input, .contact textarea{
+width:100%;
+padding:12px;
+margin-bottom:10px;
+border-radius:8px;
+border:1px solid #ccc;
+}
+
+/* ===== FOOTER ===== */
 .footer{
 background:#111827;
 color:#fff;
 text-align:center;
 padding:25px;
-}
-
-.footer a{
-color:#22c55e;
-text-decoration:none;
 }
 
 /* FLOAT */
@@ -187,27 +136,9 @@ position:fixed;
 bottom:20px;
 right:20px;
 background:#25D366;
-color:#fff;
-padding:12px 16px;
-border-radius:50px;
-text-decoration:none;
-z-index:999;
-}
-
-.scroll-top{
-position:fixed;
-bottom:80px;
-right:20px;
-background:#0f172a;
-color:#fff;
-padding:10px 14px;
+padding:14px;
 border-radius:50%;
-cursor:pointer;
-display:none;
-}
-
-@media(max-width:768px){
-.hero h1{font-size:30px;}
+color:#fff;
 }
 
 </style>
@@ -215,9 +146,9 @@ display:none;
 
 <body>
 
-<!-- TOP BAR -->
+<!-- TOPBAR -->
 <div class="topbar">
-<span>📍 Kolkata | Puja Essentials Manufacturer</span>
+<span>📍 Kolkata</span>
 <div>
 📧 pahariinnovations@gmail.com  
 <a href="tel:6293121131">📞 6293121131</a>
@@ -226,110 +157,84 @@ display:none;
 
 <!-- HERO -->
 <section class="hero">
-<div class="hero-content">
+<div>
+<img src="https://www.geolift.co.in/images/paharilogo.png" width="120"><br>
 
-<img src="https://www.geolift.co.in/images/paharilogo.png" class="logo">
+<h1>Puja Essentials Manufacturer</h1>
 
-<h1>Puja Essentials Manufacturer in India</h1>
+<p>High-quality puja samagri supplier across India</p>
 
-<p>
-Trusted manufacturer and supplier of premium puja samagri across India. We provide high-quality religious products for retailers, wholesalers, temples, and distributors.
-</p>
-
-<p>
-From kumkum and janeu to puja oils and traditional essentials, our products are crafted with purity and authenticity.
-</p>
-
-<div class="buttons">
 <a href="tel:6293121131" class="btn btn-call">Call Now</a>
 <a href="https://wa.me/916293121131" class="btn btn-wa">WhatsApp</a>
-</div>
-
 </div>
 </section>
 
 <!-- PRODUCTS -->
-<section class="section products-section">
+<section class="section">
 <h2>Our Products</h2>
-
 <div class="grid">
-
-<div class="card">
-<h3>Kumkum Paste</h3>
-<p>High-quality kumkum with vibrant color and smooth texture.</p>
+<div class="card">Kumkum Paste</div>
+<div class="card">Tilak</div>
+<div class="card">Janeu</div>
+<div class="card">Puja Oil</div>
+<div class="card">Mustard Oil</div>
 </div>
+</section>
 
-<div class="card">
-<h3>Kumkum Tilak</h3>
-<p>Premium tilak for temples and rituals.</p>
+<!-- GALLERY -->
+<section class="section gallery">
+<h2>Product Gallery</h2>
+<div class="grid">
+<img src="your1.jpg">
+<img src="your2.jpg">
+<img src="your3.jpg">
+<img src="your4.jpg">
+<img src="your5.jpg">
 </div>
+</section>
 
-<div class="card">
-<h3>Janeu (Paita)</h3>
-<p>Traditional sacred thread with authentic quality.</p>
-</div>
-
-<div class="card">
-<h3>Puja Oil</h3>
-<p>Fragrant oil enhancing spiritual practices.</p>
-</div>
-
-<div class="card">
-<h3>Mustard Oil</h3>
-<p>Pure oil ideal for diya lighting.</p>
-</div>
-
+<!-- BULK -->
+<section class="section">
+<div class="bulk">
+<h2>Looking for Bulk Supply?</h2>
+<p>Get manufacturer direct pricing & fast delivery</p>
+<a href="tel:6293121131" class="btn btn-call">Call for Bulk Order</a>
 </div>
 </section>
 
 <!-- ABOUT -->
 <section class="section">
-<h2>About Pahari Innovations</h2>
-
-<div class="about">
-
+<h2>About Us</h2>
 <p>
-Pahari Innovations is a trusted manufacturer and supplier of high-quality puja essentials, dedicated to preserving the authenticity and purity of traditional Indian rituals. Based in Kolkata, we specialize in producing a wide range of religious products including kumkum, tilak, janeu, and puja oils.
+Pahari Innovations is a trusted manufacturer of puja essentials...
 </p>
+</section>
 
-<p>
-Our focus is on delivering consistent and reliable products for retailers, wholesalers, temples, and distributors across India. Every product is prepared using quality materials to ensure purity and performance.
-</p>
-
-<p>
-We aim to build long-term relationships through transparent pricing, timely delivery, and dependable service. With a strong commitment to quality and trust, we continue to grow as a reliable name in the puja products industry.
-</p>
-
+<!-- TESTIMONIAL -->
+<section class="section">
+<h2>What Our Clients Say</h2>
+<div class="grid">
+<div class="testimonial">“Best quality products.”</div>
+<div class="testimonial">“Reliable supplier.”</div>
+<div class="testimonial">“Fast delivery.”</div>
 </div>
 </section>
 
-<!-- CTA -->
-<section class="cta">
-<h2>Looking for Puja Products Supplier?</h2>
-
-<a href="tel:6293121131" class="btn btn-call">Call Now</a>
-<a href="https://wa.me/916293121131" class="btn btn-wa">WhatsApp</a>
+<!-- CONTACT -->
+<section class="section contact">
+<h2>Contact Us</h2>
+<input type="text" placeholder="Your Name">
+<input type="text" placeholder="Phone Number">
+<textarea placeholder="Your Requirement"></textarea>
+<a href="#" class="btn btn-call">Submit</a>
 </section>
 
 <!-- FOOTER -->
 <div class="footer">
-<p>📞 6293121131 | 📧 pahariinnovations@gmail.com</p>
-<p>Developed by <a href="https://geolift.co.in" target="_blank">Geolift Solutions</a></p>
+📞 6293121131 | pahariinnovations@gmail.com
 </div>
 
-<!-- FLOAT -->
 <a href="https://wa.me/916293121131" class="whatsapp">💬</a>
-<div class="scroll-top" onclick="scrollTopFunc()">↑</div>
-
-<script>
-window.onscroll=function(){
-let btn=document.querySelector(".scroll-top");
-btn.style.display=document.documentElement.scrollTop>200?"block":"none";
-}
-function scrollTopFunc(){
-window.scrollTo({top:0,behavior:'smooth'});
-}
-</script>
 
 </body>
 </html>
