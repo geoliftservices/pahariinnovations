@@ -14,10 +14,9 @@ body{
 margin:0;
 font-family:'Poppins',sans-serif;
 background:#f8fafc;
-color:#0f172a;
 }
 
-/* ===== TOP BAR (FIXED + VISIBLE) ===== */
+/* ===== TOP BAR (FIXED PROPERLY) ===== */
 
 .topbar{
 position:fixed;
@@ -27,41 +26,49 @@ width:100%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:10px 20px;
+padding:10px 16px;
 background:#0f172a;
 color:#fff;
 z-index:9999;
 font-size:13px;
+box-sizing:border-box;
 }
 
 .phone{
 color:#22c55e;
 font-weight:600;
 text-decoration:none;
+white-space:nowrap;
 }
 
 /* ===== HERO ===== */
 
 .hero{
-padding-top:80px;
-height:100vh;
+padding-top:90px;
+min-height:90vh;
 display:flex;
 align-items:center;
 justify-content:center;
 text-align:center;
 color:#fff;
 background:linear-gradient(135deg,#0f172a,#1e293b);
+padding-left:20px;
+padding-right:20px;
+}
+
+.hero-content{
+max-width:750px;
 }
 
 .hero h1{
-font-size:46px;
+font-size:44px;
 font-weight:800;
+line-height:1.2;
 }
 
 .hero p{
-max-width:600px;
-margin:20px auto;
-opacity:.9;
+margin:20px 0;
+opacity:.85;
 }
 
 /* BUTTONS */
@@ -78,6 +85,7 @@ padding:14px 26px;
 border-radius:40px;
 text-decoration:none;
 font-weight:600;
+transition:.3s;
 }
 
 .btn-call{
@@ -86,13 +94,18 @@ color:#fff;
 }
 
 .btn-wa{
-border:1px solid #fff;
+border:1px solid rgba(255,255,255,0.6);
 color:#fff;
+}
+
+.btn:hover{
+transform:translateY(-2px);
 }
 
 .trust{
 margin-top:15px;
 font-size:13px;
+opacity:.9;
 }
 
 /* ===== SECTIONS ===== */
@@ -131,20 +144,6 @@ transform:translateY(-6px);
 box-shadow:0 20px 50px rgba(0,0,0,0.08);
 }
 
-/* ABOUT */
-
-.about{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:40px;
-align-items:center;
-}
-
-@media(max-width:768px){
-.about{grid-template-columns:1fr;}
-.hero h1{font-size:32px;}
-}
-
 /* CTA */
 
 .cta{
@@ -154,13 +153,19 @@ text-align:center;
 padding:60px 20px;
 }
 
-/* FOOTER */
+/* MOBILE FIX */
 
-.footer{
-text-align:center;
-padding:20px;
-font-size:14px;
-color:#64748b;
+@media(max-width:768px){
+
+.topbar{
+font-size:12px;
+padding:8px 10px;
+}
+
+.hero h1{
+font-size:30px;
+}
+
 }
 
 </style>
@@ -177,7 +182,7 @@ color:#64748b;
 <!-- HERO -->
 <section class="hero">
 
-<div>
+<div class="hero-content">
 
 <h1>Puja Essentials Manufacturer in India</h1>
 
@@ -204,13 +209,11 @@ Pahari Innovations supplies high-quality puja samagri including kumkum, puja oil
 <h2>Our Products</h2>
 
 <div class="grid">
-
 <div class="card">Puja Paste (Kumkum)</div>
 <div class="card">Kumkum Tilak</div>
 <div class="card">Janeu (Paita)</div>
 <div class="card">Aguru Puja Oil</div>
 <div class="card">Puja Mustard Oil</div>
-
 </div>
 
 </section>
@@ -218,25 +221,11 @@ Pahari Innovations supplies high-quality puja samagri including kumkum, puja oil
 <!-- ABOUT -->
 <section class="section">
 
-<div class="about">
+<h2>About Us</h2>
 
-<div>
-<h2>About Pahari Innovations</h2>
-
-<p>
-Pahari Innovations is a Kolkata-based manufacturer of puja essentials, supplying high-quality religious products across India.
+<p style="text-align:center; max-width:700px; margin:auto;">
+Pahari Innovations is a Kolkata-based manufacturer of puja essentials supplying high-quality religious products across India with consistent quality and reliable service.
 </p>
-
-<p>
-We focus on consistent quality, bulk supply, and reliable delivery for retailers and wholesalers.
-</p>
-</div>
-
-<div>
-<img src="https://images.unsplash.com/photo-1606813907291-d86efa9b94db" width="100%">
-</div>
-
-</div>
 
 </section>
 
@@ -246,28 +235,10 @@ We focus on consistent quality, bulk supply, and reliable delivery for retailers
 <h2>Why Choose Us</h2>
 
 <div class="grid">
-
 <div class="card">Manufacturer Direct Pricing</div>
 <div class="card">Bulk Supply Across India</div>
 <div class="card">Reliable Quality</div>
 <div class="card">Transparent Dealing</div>
-
-</div>
-
-</section>
-
-<!-- PROCESS -->
-<section class="section">
-
-<h2>How We Work</h2>
-
-<div class="grid">
-
-<div class="card">Order Request</div>
-<div class="card">Production</div>
-<div class="card">Quality Check</div>
-<div class="card">Delivery</div>
-
 </div>
 
 </section>
@@ -283,22 +254,6 @@ We focus on consistent quality, bulk supply, and reliable delivery for retailers
 <a href="https://wa.me/916293121131" class="btn btn-wa">WhatsApp</a>
 
 </section>
-
-<!-- CONTACT -->
-<section class="section">
-
-<h2>Contact</h2>
-
-<p><strong>Phone:</strong> 6293121131</p>
-<p><strong>Email:</strong> pahariinnovations@gmail.com</p>
-<p><strong>Location:</strong> Kolkata, India</p>
-
-</section>
-
-<!-- FOOTER -->
-<div class="footer">
-© 2026 Pahari Innovations
-</div>
 
 </body>
 </html>
